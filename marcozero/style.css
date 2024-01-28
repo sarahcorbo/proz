@@ -3,6 +3,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Para garantir que o conteúdo ocupe pelo menos a altura da tela */
 }
 
 header {
@@ -17,10 +20,12 @@ section {
     justify-content: space-around;
     align-items: center;
     padding: 40px;
+    flex: 1; /* Ocupa o espaço restante na altura do pai */
 }
 
 .info-container {
     max-width: 400px;
+    text-align: center; /* Centraliza o conteúdo dentro do .info-container */
 }
 
 img {
@@ -40,9 +45,13 @@ footer {
     width: 100%;
 }
 
+ul {
+    display: flex;
+    justify-content: center;
+}
+
 .rede-social {
     list-style: none;
-    display: inline-block;
     margin-right: 10px;
 }
 
